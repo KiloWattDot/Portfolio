@@ -6,6 +6,10 @@ body {
     font-size: 16px;
   }
   
+  /* The menu and title of the page styling
+      It's also responsive to where the nav
+      items wrap under the title 
+  */
   header {
     display: flex;
     justify-content: space-between;
@@ -14,26 +18,32 @@ body {
     background-color: #000000;
     color: #fff;
   }
-  /* Change the heading size to 200%, give it a margin all around, and assign font family to serif */
+  /* h1 styling for the whole page */
 h1 {
     margin: 2%;
     font-size: 200%;
     font-family: serif;
+   text-align: center;
+
   }
   
-  /* Change header size to 180%, give it a 3% margin on top and bottom, and assign font family to serif */
+ /* h2 styling for the whole page */
   h2 {
     margin: 3% 0;
     font-size: 180%;
     font-family: serif;
+
   }
   
-  /* Change header size to 150% and assign font family to serif */
+  /* h3 styling for the whole page */
   h3 {
+    margin: 1%;
     font-size: 150%;
     font-family: serif;
   }
   
+  /* The Navigation has 
+   */
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -48,31 +58,177 @@ h1 {
   /* add underline element */
   }
   
+  /* The links within the Navigation
+      color is set to a whitish color and bold
+   */
   nav a {
     color: #b9C6ae;
     font-weight: bold;
     text-decoration: none;
     /* font-size: 24px; */
   }
-  main {
+
+  
+/* The first section that will be grey with white text
+    and responsive
+*/
+  .GreyBox {
     display: flex;
-    flex: 1 1 0;
-    max-width: 4000px;
-    margin: 2% auto;
+    flex-direction: column;
+    color: lightcyan;
+    margin: 2px auto;
+    background-color:rgba(0, 0, 0, 0.8);
+  
+  }
+/* About, Resume, and My Projects sections will have these properties */
+  .WhiteBox {
+    color:#000000;
+    margin: 5px auto;
+    background-color: #ffffff;
+
   }
 
-  section {
-    flex: 1 1 0;
-    padding-right: 5%;
+
+
+/* Contact me section will have the properties */
+  .BlackBox {
+    
+    color: #F5BF00;
+    margin: 5px auto;
+    padding-top: 5px;
+    background-color: #000000;
+    text-align: center;
+
+  }
+
+  #GetInTouch {
+   margin: 20px;
+   text-decoration: underline;
+   color: #F5BF00;
+  }
+  /* This is where the contact live on the right
+      and the styling.
+
+  */
+  .LeftBox {
+    margin: 20px;
+    padding: 20px;
+ 
+  }
+  /* This is where the forms live on the left
+      and the styling.
+  */
+  .RightBox {
+    margin: 20px;
+    padding: 0px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
   }
   
-  article {
-    border-bottom: 1px solid #d8a47f
-  ;
+/* I found the next 3 classes from https://coder-coder.com/display-divs-side-by-side/#flexbox-method 
+   to get the .LeftBox and .Rightbox side by side.
+*/
+  .flex-container {
+    display: flex;
+    
+}
+/* https://coder-coder.com/display-di */
+  .flex-child {
+      flex: 1;
+    
+  }  
+/* https://coder-coder.com/display-di */
+  .flex-child:first-child {
+      margin-right: 20px;
+      margin-bottom: 10px;
+  } 
+  #Name-Emailbox {
+    min-height: 60px;
+
+  }
+
+  #Messagebox {
+    min-height: 90px;
+    
+  }
+
+  #lighterYellow {
+    color: #FFF1BD;
+    font-size: 25px;
+    margin-top: 5px;
   }
 
 
+/* This is the input styling for the form boxes and 
+    I used an example from W3 Schools 
+    (https://www.w3schools.com/css/tryit.asp?filename=trycss_form_color)
+*/
+  input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-color: #F5BF00;
+    background-color: #000000;
+    border-radius: 7px;
+    color: #F5BF00;
+    text-decoration: underline;
+    font-size: 20px;
+    
 
+  }
+  /* Submit button styling */
+
+  button {
+   background-color: #F5BF00;
+   color: white;
+   width:60%;
+   min-height: 50px;
+   border-radius: 7px;
+   margin: 10px;
+   font-size: 20px;
+   
+  }
+
+  .SocialMediaLinks {
+    margin: 5px 5px;
+    align-content: center;
+  }
+
+  #Github {
+    margin: 1000px;
+
+  }
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+  
 
   @media screen and (max-width: 768px) {
     header, main {
