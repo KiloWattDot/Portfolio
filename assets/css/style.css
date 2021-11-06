@@ -22,16 +22,18 @@ body {
 h1 {
     margin: 2%;
     font-size: 200%;
-    font-family: serif;
-   text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
 
   }
   
  /* h2 styling for the whole page */
   h2 {
     margin: 3% 0;
-    font-size: 180%;
+    font-size: 100%;
     font-family: serif;
+    font-family: 'Poppins', sans-serif;
 
   }
   
@@ -40,6 +42,7 @@ h1 {
     margin: 1%;
     font-size: 150%;
     font-family: serif;
+    
   }
   
   /* The Navigation has 
@@ -47,13 +50,16 @@ h1 {
   nav ul {
     display: flex;
     justify-content: space-between;
+    color: #fff;
     min-width: 300px;
     margin: 0;
     padding: 0;
     padding-right: 64px;
-    padding-left: 64px;
+    padding-left: 60px;
     text-decoration-line: underline;
     font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    
     
   /* add underline element */
   }
@@ -62,7 +68,7 @@ h1 {
       color is set to a whitish color and bold
    */
   nav a {
-    color: #b9C6ae;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     /* font-size: 24px; */
@@ -79,42 +85,75 @@ h1 {
   
   }
 
+  /* Hire Me Button Properties */
+
+  .HireMe {
+    color: rgb(0, 0, 0);
+    width:30%;
+    min-height: 50px;
+    border-radius: 7px;
+    margin: 10px;
+    font-size: 12px;
+   }
+
+   /* Know More! Button properties  */
+ 
+  .MoreInfo {
+    background-color:rgba(51, 51, 51);
+    color: #F5BF00;
+    width:30%;
+    min-height: 50px;
+    border-radius: 7px;
+    border-color: #F5BF00;
+    margin: 10px;
+    font-size: 12px;
+    }
+
+
+/* Hire Me/Know More Text properies */
+  .GreyBoxButtons {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+ 
+/* "The Hello, I am" entire title aligning properties */
   .IntroTitle {
     margin-left: 75px;
     margin-top: 90px;
   }
+  /* Text format for the "Hello, I am..." part */
 
   #HelloIam {
     font-size: 50px;
     margin: 0px;
+    font-weight:normal;
 
   }
 
+/* Text format for the "Dorothy..." part */
   #DOROTHY {
     font-size:  150px;
     margin-top: -50px;
+    color: #F5BF00;;
+    font-weight:normal;
 
   }
-
+  /* Text format for the "welcome to..." part */
   #WELCOME {
     font-size: 30px;
     margin-top: -40px;
+    color:rgb(173, 173, 173);
+    font-weight:normal;
+  
 
   }
 
-  .CenterHelloPart {
-    
-  }
+  /* aligning for my yellow headshot */
 
   #YellowBGImage {
     margin-left: 70px;
     padding: 50px;
-  }
-
-  .LeftBoxCenter {
-    margin-right: 20px;
-    margin-top:20px;
-
   }
 
 
@@ -135,47 +174,63 @@ h1 {
     margin-bottom: 80px;
     margin-top: 40px;
   }
-  
+    /* Tag for navigation + added some text formatting */
   #AboutMe {
     text-align: left;
     
   }
 
+  /* some text formatting for the paragraph */
   #AboutMeText {
     text-align: left;
     font-size: 25px;
   }
   
+  /* Aligning and adding an under line to main title
+     MY WORK. 
+  */
 
   #MyWork {
     margin: 20px;
     text-decoration: underline;
   }
 
+  /* Text formatting for titles Project/Resume */
+
   #Projects-Resume {
     text-align: center;
+    font-family:'Work Sans', sans-serif;
   
   }
+/* changing all the project images to be the same size 
 
+*/
   img.resize {
     width: 200px;
     height: 100px;
 
   }
+  /* Making resume fit in side the
+     box towards the center
+  */
 
   img.resizeResume {
     width: 600px;
     height: 300;
     
   }
-
+ /* adding flex properties to project pictures 
+    so there is 2 rows/columns
+  */
   img.stack {
     border-style: clear;
     border-width: 1px;
     margin: 40px; 
 
   }
-
+  /* adding flex properties to project pictures 
+    so there is 2 rows/columns
+  */
   .FourBoxes {
     /* flex: 4; */
     display: flex;
@@ -207,11 +262,12 @@ h1 {
     text-align: center;
 
   }
-
+  /* Text formatting for Get In Touch */
   #GetInTouch {
    margin: 20px;
    text-decoration: underline;
    color: #F5BF00;
+   font-family:'Work Sans', sans-serif;;
   }
   /* This is where the contact live on the right
       and the styling.
@@ -220,6 +276,7 @@ h1 {
   .LeftBox {
     margin: 20px;
     padding: 20px;
+    font-family: 'Work Sans', sans-serif;
  
   }
   /* This is where the forms live on the left
@@ -231,6 +288,7 @@ h1 {
     padding-bottom: 20px;
     text-align: left;
     font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
   }
   
 /* I found the next 3 classes from https://coder-coder.com/display-divs-side-by-side/#flexbox-method 
@@ -250,16 +308,21 @@ h1 {
       margin-right: 20px;
       margin-bottom: 10px;
   } 
+
+  /* Size of input boxes */
   #Name-Emailbox {
     min-height: 60px;
 
   }
 
+  /* Size of input boxes - Longer Height  */
+
   #Messagebox {
-    min-height: 90px;
+    min-height: 100px;
     
   }
 
+  /* Lighter color for text/icons */
   #lighterYellow {
     color: #FFF1BD;
     font-size: 25px;
@@ -298,53 +361,56 @@ h1 {
    
   }
 
+  /* Submit button text size */
   .submit {
     text-size-adjust: 50px;
 
   }
 
+    /* Aligning of social media icons */
   .SocialMediaLinks {
     margin: 5px 5px;
     align-content: center;
   }
 
+  /* More aligning of social media icons */
   #Github {
     margin: 1000px;
 
   }
 
-  
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-  
-
   @media screen and (max-width: 768px) {
     header, main {
       flex-direction: column;
+      width: 40%;
     }
 
-}
+    
+      /* I tried making the page responsive but I was only able 
+          to make the navigateion.
+      */
+
+
+  /* @media screen and (max-width: 1200px) {
+    .flex-child {
+
+      padding: 50%;
+
+      width: 60%;
+      height: 60%;
+    }
+
+  @media screen and (max-width: 900px) {
+    .flex-child {
+      width: 40%;
+      height: 40%;
+      padding: 30%;
+    }
+      
+  @media screen and (max-width: 768px) {
+    .flex-child {
+      width: 30%;
+      height: 30%;
+      padding: 20%; */
+    }
+

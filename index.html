@@ -4,9 +4,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title> MY PORTFOLIO </title>
+   <title> DOROTHY GILCHRIST'S PORTFOLIO </title>
    <link rel="stylesheet" href="./assets/css/reset.css" />
    <link rel="stylesheet" href="./assets/css/style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,900;1,100;1,400&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
 
  </head>
@@ -16,10 +22,10 @@
     <h1>DOROTHY GILCHRIST</h1>
     <nav>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">My Work</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
+        <a href="#AboutMe">About</a>
+        <a href="#MyWork">My Work</a>
+        <a href="#Projects-Resume">Resume</a>
+        <a href="#GetInTouch">Contact</a>
         
       </ul>
     </nav>
@@ -30,21 +36,35 @@
 
     <!-- ----------INTRO SECTION---------- -->
       <!-- First Box, Grey  (Hello/Pic) -->
-      <section class="GreyBox WhiteboxSpacing"> 
+      <section class="GreyBox "> 
         <!-- The Hello part -->
         <div class="flex-container"> 
-          <div class="FourBoxes flex-child CenterHelloPart" >
+          <div class="FourBoxes flex-child" >
             <div class="IntroTitle"> 
               <h2 id="HelloIam">Hello, I am</h2>
               <h2 id="DOROTHY">Dorothy</h2>
               <h2 id="WELCOME">Welcome to my portfolio</h2>
+
+              <button class="HireMe ">
+                <!-- Linking to Email (https://www.tutorialspoint.com/html/html_email_links.htm) -->
+                <a class="HireMe GreyBoxButtons" href="mailto: Doro.Gilchrist@gmail.com" > 
+                HIRE ME
+                </a>
+              </button> 
+
+              <button class="MoreInfo "> 
+                <a class="MoreInfo GreyBoxButtons" href="#AboutMe"> 
+                KNOW MORE!
+                </a>
+              </button>
+         
               </div>
           </div>
 
           <!-- The picture to the righ thats yellow BG -->
     
           <div class=" flex-child FourBoxes">
-            <img id="YellowBGImage" src="./assets/css/images/Me (yellow bg).png">
+            <img id="YellowBGImage" src="./assets/css/images/Me (yellow bg).png" alt="Headshot of Dorothy Gilchrist"/>
             <!-- image -->
           </div> 
         </div> 
@@ -57,18 +77,17 @@
         <!-- The grad picture part -->
       <div class="FourBoxes flex-container">
         <div class="RightBox flex-child"> 
-          <img src="./assets/css/images/me with box.png" />
+          <img src="./assets/css/images/me with box.png " alt = "Graduation Picture of Dorothy Gilchrist" />
         </div>
-=
         <!-- About Me and information-->
-        <div class="flex-child FourBoxes">
-          <h1 id="AboutMe ">ABOUT ME</h1>
+        <div class="flex-child ">
+          <h1 id="AboutMe"><u> ABOUT ME </u></h1>
           <p id="AboutMeText">
-            My name is Dorothy Gilchrist and I am from Atlanta, Georgia. <br> 
-            I have a bachelors degree in Electrical & Electronics Engineering <br>
-            from the University of Georgia. Go Bulldogs! I am one the first  <br>
+            My name is Dorothy Gilchrist and I am from Atlanta, Georgia. 
+            I have a bachelors degree in Electrical & Electronics Engineering
+            from the University of Georgia. Go Bulldogs! I am one the first 
             black females to graduate from UGA with an EEE degree. <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore <br>
             magna aliqua. 
           </p>
@@ -92,41 +111,39 @@
        <!-- Leftside-Projects  -->
        <div class="flex-container">
          <div class="RightBox flex-child">
-           <h2 id="Projects-Resume"> PROJECTS</h2>
+           <h3 id="Projects-Resume"> PROJECTS</h3>
           <div class="FourBoxes">            
             <section >
               <header> SURF REPORT </header>
-             <img class="resize stack" src="./assets/css/images/Maui_Surf01-724x400.jpg"/>
+             <img class="resize stack" src="./assets/css/images/Maui_Surf01-724x400.jpg" alt="Picture of a surfer"/>
            </section>
            
            
             <section >
               <header> LED WALL </header>
-            <img  class="resize stack"src="./assets/css/images/LED-Wall-Benefits.png"/>
+            <img  class="resize stack"src="./assets/css/images/LED-Wall-Benefits.png" alt="Picture of Wall of Led Lights"/>
           </section>
 
        
             <section >
               <header> CALCULATOR </header>
-            <img class="resize stack" src="./assets/css/images/financial-calculator.jpeg"/>
+            <img class="resize stack" src="./assets/css/images/financial-calculator.jpeg" alt="Picture of hand using calculator"/>
           </section>
         
             <section >
               <header> RUN BUDDY </header>
-            <img  class="resize stack"src="./assets/css/images/carousel.jpg"/>
+            <img  class="resize stack"src="./assets/css/images/carousel.jpg" alt="Picture of runners on a track"/>
           </section>
           </div>
          </div>
 
-        
+        <!-- Leftside-Resume  -->
           <div class="RightBox flex-child">
-            <h2 id="Projects-Resume"> RESUME</h2>
-              <h3 id="Projects-Resume">
-                Click the image
-              </h3>
+            <h3 id="Projects-Resume"> RESUME (click)</h3>
+            
             <section>
               <a href="./assets/css/images/Dorothy Gilchrist - Apex Resume.docx">
-                <img class="resizeResume" src="./assets/css/images/resume pic.jpeg" />
+                <img class="resizeResume" src="./assets/css/images/resume pic.jpeg " alt=" Picture of person handing in their resume" />
               </a>
             </section>
 
@@ -144,15 +161,12 @@
       <!--5th Box, Black - Contacts  -->
       <section class="BlackBox">
         <!-- Title for contact -->
-        <h1 id="GetInTouch"> Get In Touch</h1>
+        <h1 id="GetInTouch"> GET IN TOUCH</h1>
         
       
         <!-- Left Side entry boxes -->
         <div class="flex-container">
           <div class="LeftBox flex-child" >
-
-            <h1> Hello</h1>
-
         
         
             <!-- Name box -->
@@ -173,7 +187,7 @@
             <!-- Message -->
             <div>
               <form >
-                <input type="text" placeholder="Message" id="Messagebox"">
+                <input type="text" placeholder="Message" id="Messagebox">
               </form>
             </div>
 
