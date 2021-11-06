@@ -17,7 +17,7 @@
     <nav>
       <ul>
         <li><a href="#">About</a></li>
-        <li><a href="#">My Project</a></li>
+        <li><a href="#">My Work</a></li>
         <li><a href="#">Resume</a></li>
         <li><a href="#">Contact</a></li>
         
@@ -30,97 +30,128 @@
 
     <!-- ----------INTRO SECTION---------- -->
       <!-- First Box, Grey  (Hello/Pic) -->
-      <section class="GreyBox"> 
+      <section class="GreyBox WhiteboxSpacing"> 
         <!-- The Hello part -->
-        <div>
-          <h2>Hello, I am</h2>
-          <h1>Dorothy</h1>
-          <h3>Welcome to my portfolio</h3>
-        </div>
+        <div class="flex-container"> 
+          <div class="FourBoxes flex-child CenterHelloPart" >
+            <div class="IntroTitle"> 
+              <h2 id="HelloIam">Hello, I am</h2>
+              <h2 id="DOROTHY">Dorothy</h2>
+              <h2 id="WELCOME">Welcome to my portfolio</h2>
+              </div>
+          </div>
 
-        <!-- The picture to the righ thats yellow BG -->
-  
-        <div>
-          <h2> </h2>>
-          <!-- image -->
-        </div>  
+          <!-- The picture to the righ thats yellow BG -->
+    
+          <div class=" flex-child FourBoxes">
+            <img id="YellowBGImage" src="./assets/css/images/Me (yellow bg).png">
+            <!-- image -->
+          </div> 
+        </div> 
       </section>
 
 <!-- --------ABOUT ME SECTION------------ -->
       <!-- 2nd Box, White - About me info -->
-      <section class="WhiteBox">
+      <section class="WhiteBox WhiteboxSpacing">
+        
         <!-- The grad picture part -->
-        <div>
-          <h2></h2>
+      <div class="FourBoxes flex-container">
+        <div class="RightBox flex-child"> 
+          <img src="./assets/css/images/me with box.png" />
         </div>
-
+=
         <!-- About Me and information-->
-        <div>
-          <h1>ABOUT ME </h1>
-          <p>
+        <div class="flex-child FourBoxes">
+          <h1 id="AboutMe ">ABOUT ME</h1>
+          <p id="AboutMeText">
             My name is Dorothy Gilchrist and I am from Atlanta, Georgia. <br> 
             I have a bachelors degree in Electrical & Electronics Engineering <br>
             from the University of Georgia. Go Bulldogs! I am one the first  <br>
             black females to graduate from UGA with an EEE degree. <br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
             sed do eiusmod tempor incididunt ut labore et dolore <br>
-            magna aliqua.            
+            magna aliqua. 
           </p>
+        
           <!-- image -->
-        </div>  
+        </div> 
+      </div> 
       </section>
 
-<!-- -------MY PROJECTS SECTION------------- -->
+
+
+
+<!-- -------MY WORK SECTION------------- -->
       <!--3rd Box, White - My projects  -->
-      <section class="WhiteBox">
-        <!-- Each Project (4 boxes) -->
-        <div>
-          <h1>MY PROJECTS </h1>
-          <div>
-            <!-- BIG IMAGE -->
+      <section class="WhiteBox WhiteboxSpacing ">
+       <!-- Title for My Work -->
+       <h1 id="MyWork"> MY WORK </h1>
+       
+      
+
+       <!-- Leftside-Projects  -->
+       <div class="flex-container">
+         <div class="RightBox flex-child">
+           <h2 id="Projects-Resume"> PROJECTS</h2>
+          <div class="FourBoxes">            
+            <section >
+              <header> SURF REPORT </header>
+             <img class="resize stack" src="./assets/css/images/Maui_Surf01-724x400.jpg"/>
+           </section>
+           
+           
+            <section >
+              <header> LED WALL </header>
+            <img  class="resize stack"src="./assets/css/images/LED-Wall-Benefits.png"/>
+          </section>
+
+       
+            <section >
+              <header> CALCULATOR </header>
+            <img class="resize stack" src="./assets/css/images/financial-calculator.jpeg"/>
+          </section>
+        
+            <section >
+              <header> RUN BUDDY </header>
+            <img  class="resize stack"src="./assets/css/images/carousel.jpg"/>
+          </section>
+          </div>
+         </div>
+
+        
+          <div class="RightBox flex-child">
+            <h2 id="Projects-Resume"> RESUME</h2>
+              <h3 id="Projects-Resume">
+                Click the image
+              </h3>
+            <section>
+              <a href="./assets/css/images/Dorothy Gilchrist - Apex Resume.docx">
+                <img class="resizeResume" src="./assets/css/images/resume pic.jpeg" />
+              </a>
+            </section>
+
           </div>
 
-          <div>
-            <!-- 1ST SMALL IMAGE -->
-          </div>
+        
 
-          <div>
-            <!-- 2ND SMALL IMAGE -->
-          </div>
-
-          <div>
-            <!-- 3RD SMALL IMAGE -->
-          </div>
-
-        </div>
+       </div>
 
       </section>
 
-      <!-- ------------RESUME SECTION----------- -->
-      <!--4th Box, White - Resume -->
-      <section class="WhiteBox">
-        <!-- pic/resume linked -->
-        <div>
-          <h1>MY RESUME</h1>
-          <div>
-            <img src="./assets/css/images/resume pic.jpeg" />
-          </div>
-        </div>
-
-      </section>
-
+      
       <!-- -------------CONTACT ME SECTION------->
 
       <!--5th Box, Black - Contacts  -->
       <section class="BlackBox">
         <!-- Title for contact -->
         <h1 id="GetInTouch"> Get In Touch</h1>
+        
+      
         <!-- Left Side entry boxes -->
-
-
-
         <div class="flex-container">
           <div class="LeftBox flex-child" >
+
+            <h1> Hello</h1>
 
         
         
@@ -147,7 +178,7 @@
             </div>
 
             <!-- Submit -->
-            <div>
+            <div class="submit">
               <button>Submit</button>
             </div>
           </div>
@@ -166,9 +197,15 @@
                   Atlanta, GA 30331
                 </p>
               <h3> Social Media</h3>
-                <img src="assets/css/images/linkedin.png" alt="Linkedin Icon" />
+                <a href="https://www.linkedin.com/in/dorogilchrist/">
+                <img src="./assets/css/images/linkedin.png" alt="Linkedin Icon" />
+                </a>
+                <a href="https://github.com/KiloWattDot">
                 <img src="./assets/css/images/github.png" alt="GitHub Icon" />
+                </a>
+                <a href="https://www.instagram.com/lilpeppernosalt/"> 
                 <img  src="./assets/css/images/instagram.png" alt="instagram Icon" />
+                </a>
                 
               
                 
