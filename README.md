@@ -7,7 +7,7 @@
 
 ## Mock up
 
-The following wireframe shows the web application's appearance and functionality should be:
+The following wireframe shows the web application's appearance and functionality should be. I created this wirefram using Figma.com:
 
 https://github.com/KiloWattDot/Portfolio/blob/main/assets/css/images/Wireframe.png
 
